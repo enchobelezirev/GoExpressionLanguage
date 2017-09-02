@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"strings"
 
+	customCommand "github.com/megaboy2/GoExpressionLanguage/custom_command"
 	"github.com/megaboy2/GoExpressionLanguage/evaluator"
 )
 
@@ -64,7 +65,7 @@ func printSupportedOutputNumbers(outputBaseSystem string) {
 func readCustomInput(input string, context evaluator.Context) {
 	splittedUserInput := strings.Fields(input)
 	if splittedUserInput[0] == "help" {
-		// print help
+		customCommand.NewHelp().PrintHelp()
 	} else if len(splittedUserInput) == 2 {
 		if splittedUserInput[0] == "ibase" {
 			printSupportedInputNumbers(splittedUserInput[1])

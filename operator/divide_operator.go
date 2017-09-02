@@ -6,7 +6,6 @@ type DivideOperator struct {
 func (op DivideOperator) GetSupportedSymbols() map[string]bool {
 	supportedSymbols := make(map[string]bool)
 	supportedSymbols["/"] = true
-	supportedSymbols["%"] = true
 	supportedSymbols["÷"] = true
 	return supportedSymbols
 }

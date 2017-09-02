@@ -6,6 +6,8 @@ import (
 	"math"
 	"strconv"
 	"strings"
+
+	usage "github.com/megaboy2/GoExpressionLanguage/usage"
 )
 
 const inputBaseSystem = "ibase"
@@ -129,4 +131,12 @@ func (evaluator NumberBaseSystemEvaluator) Eval(context Context) { // ? should t
 		runned = append(runned, string(convertToRune(number)))
 	}
 	fmt.Printf("The result is: %v\n", strings.Join(runned, ""))
+}
+
+func (evaluator NumberBaseSystemEvaluator) GetUsage() usage.Usage {
+	return usage.Usage{
+		Description:         "NumberBaseSystemEvaluator - used for converting from any counting system to another counting system",
+		ExampleUsage:        "ABC123",
+		DetailedDescription: "Converts the given input from a specified input number base system to a specified output number base system. The number base systems are specified using the following way: ibase - used for specifing the input number base system; obase - used for specifing the output number base system.",
+	}
 }

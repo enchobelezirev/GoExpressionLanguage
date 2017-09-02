@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
+	usage "github.com/megaboy2/GoExpressionLanguage/usage"
 	util "github.com/megaboy2/GoExpressionLanguage/util"
 
 	operatorPackage "github.com/megaboy2/GoExpressionLanguage/operator"
@@ -94,5 +95,13 @@ func (evaluator MathematicalEvaluator) Eval(context Context) { // ? should there
 			nextOperator := operatorStack.Top()
 			nextOperator.AddOperandToOperator(result)
 		}
+	}
+}
+
+func (evaluator MathematicalEvaluator) GetUsage() usage.Usage {
+	return usage.Usage{
+		Description:         "MathematicalEvaluator - calculating mathematical expressions",
+		ExampleUsage:        "( * ( / ( + 2 3 ) ) )",
+		DetailedDescription: "The expressions must has opening and closing brackets ( ). The Operators and the numbers must be specified with a space delimited from the ( ). Supported operators: + - / * ^ sin cos tg sqrt",
 	}
 }
