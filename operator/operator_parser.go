@@ -5,6 +5,13 @@ var operators = []Operator{
 	MinusOperator{},
 	MultiplyOperator{},
 	DivideOperator{},
+	SinusOperator{},
+	CosinusOperator{},
+	TangensOperator{},
+	SquareOperator{},
+	PowerOperator{},
+	AndOperator{},
+	OrOperator{},
 }
 
 type OperatorParser struct {

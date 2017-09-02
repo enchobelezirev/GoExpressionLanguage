@@ -12,16 +12,23 @@ import (
 )
 
 var SupportedMathematicalSymbols = map[string]bool{
-	"(":   true,
-	"*":   true,
-	")":   true,
-	"-":   true,
-	"/":   true,
-	"%":   true,
-	"x":   true,
-	"sin": true,
-	"cos": true,
-	"+":   true,
+	"(":    true,
+	"*":    true,
+	")":    true,
+	"-":    true,
+	"/":    true,
+	"%":    true,
+	"x":    true,
+	"sin":  true,
+	"cos":  true,
+	"+":    true,
+	"sqrt": true,
+	"^":    true,
+	"tan":  true,
+	"&&":   true,
+	"and":  true,
+	"||":   true,
+	"or":   true,
 }
 
 type MathematicalEvaluator struct {
@@ -102,6 +109,6 @@ func (evaluator MathematicalEvaluator) GetUsage() usage.Usage {
 	return usage.Usage{
 		Description:         "MathematicalEvaluator - calculating mathematical expressions",
 		ExampleUsage:        "( * ( / ( + 2 3 ) ) )",
-		DetailedDescription: "The expressions must has opening and closing brackets ( ). The Operators and the numbers must be specified with a space delimited from the ( ). Supported operators: + - / * ^ sin cos tg sqrt",
+		DetailedDescription: "The expressions must has opening and closing brackets ( ). The Operators and the numbers must be specified with a space delimited from the ( ). Supported operators: + - / * ^ sin cos tg sqrt and or. Please do not combine the logical operators with the mathematical ones :)",
 	}
 }
