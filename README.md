@@ -7,6 +7,7 @@ This is an expression language written in Go. Please read the below description 
 
 # Supported operations
 - Mathematical expressions - used for calculating a mathematical expressions ( + 2 3 ). The essential part here is that there MUST be opening and closing brackets as it is in predicate style. The drawback is that the brackets MUST be separated with space from the operators and the operands. Here is a list of the supported operators:
+
 Operator | Supported symbols | Description
 --- | --- | ---
 `+` | + | Sums a set of numbers
@@ -20,6 +21,7 @@ Operator | Supported symbols | Description
 `tan` | tan | Calculates the tangens of a give number
 `&&` | && | Performs AND operation
 `||` | or | Performs OR operation
+
 
 - Number base systems - used for converting from a given number in a number base system to another base system. If one want to use this feature, the variables ibase and obase must be specified. The ibase - used for setting an input base number system, obase - used for setting the output number base system. 
 Note: The supported base systems are from 2 - 36.
