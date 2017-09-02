@@ -33,4 +33,4 @@ Example usage:
 # Downloads
 Mac OS X 64 bit | Windows 64 bit | Linux 64 bit
 --- | --- | ---
-[go-exp-0.0.1-darwin](http://google.com) | [go-exp-0.0.1-windows.exe](https://google.com) | [go-exp-0.0.1-linux](http://google.com) |
+[go-exp-0.0.1-darwin](https://github.com/megaboy2/GoExpressionLanguage/releases/download/0.0.1/go-exp-darwin-amd64) | [go-exp-0.0.1-windows.exe](https://github.com/megaboy2/GoExpressionLanguage/releases/download/0.0.1/go-exp-windows-amd64.exe) | [go-exp-0.0.1-linux](https://github.com/megaboy2/GoExpressionLanguage/releases/download/0.0.1/go-exp-linux-amd64) |
