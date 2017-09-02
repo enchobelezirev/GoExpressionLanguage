@@ -11,15 +11,15 @@ Operator | Supported symbols | Description
 --- | --- | ---
 `+` | + | Sums a set of numbers
 `-` | - | Substracts a set of numbers
-`*` | * x| Multiplies a set of numbers
-`÷` | ÷ / | Divides a set of numbers
+`*` | * | Multiplies a set of numbers
+`÷` | ÷ | Divides a set of numbers
 `^` | ^ | Powers two numbers a^b
 `sqrt` | sqrt | Squares a give number
 `sin` | sin | Calculates the sinus of a give number
 `cos` | cos | Calculates the cosinus of a give number
 `tan` | tan | Calculates the tangens of a give number
-`&&` | and && | Performs AND operation
-`||` | or || | Performs OR operation
+`&&` | && | Performs AND operation
+`||` | or | Performs OR operation
 
 - Number base systems - used for converting from a given number in a number base system to another base system. If one want to use this feature, the variables ibase and obase must be specified. The ibase - used for setting an input base number system, obase - used for setting the output number base system. 
 Note: The supported base systems are from 2 - 36.
